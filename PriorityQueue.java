@@ -11,7 +11,7 @@
 
 /**
  * 
- *
+ * Interface de PriotityQueue que contiene los metodos que se utilizaran en el VectorHeap, esto extiende de la Comparable
  * @param <E>
  */
 public interface PriorityQueue <E extends Comparable<E>> {
