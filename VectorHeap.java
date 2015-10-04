@@ -15,7 +15,7 @@ import java.util.Vector;
 
 
 /**
- * 
+ *  Classe vectorheap que se extiende de Comparable y cuya clase super es PriotityQueue
  *
  * @param <E>
  */
@@ -23,7 +23,7 @@ public class VectorHeap <E extends Comparable<E>>  extends PriorityQueue<E>{
 	
 	
 	/**
-	 * 
+	 *  Generación de un objeto de tipo Vector llamado data
 	 */
 	protected Vector<E> data;
 	//public VectorHeap(){ 
@@ -32,7 +32,7 @@ public class VectorHeap <E extends Comparable<E>>  extends PriorityQueue<E>{
 	
 	
 	/**
-	 * @param v
+	 * @param v Consructor  que agrega los datos al Vector
 	 */
 	public VectorHeap(Vector<E> v){
 		int i;
@@ -43,7 +43,7 @@ public class VectorHeap <E extends Comparable<E>>  extends PriorityQueue<E>{
 	}
 	
 	/**
-	 * @param i
+	 * @param i Obtenida de libro de texto
 	 * @return
 	 */
 	protected static int parent(int i){
@@ -51,7 +51,7 @@ public class VectorHeap <E extends Comparable<E>>  extends PriorityQueue<E>{
 	}
 	
 	/**
-	 * @param i
+	 * @param i Obtenida de libro de texto
 	 * @return
 	 */
 	protected static int left(int i){
@@ -59,7 +59,7 @@ public class VectorHeap <E extends Comparable<E>>  extends PriorityQueue<E>{
 	}
 	
 	/**
-	 * @param i
+	 * @param i Obtenida de libro de texto
 	 * @return
 	 */
 	protected static int right(int i){
