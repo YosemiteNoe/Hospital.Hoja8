@@ -1,14 +1,18 @@
-public class Paciente  implements Comparable<Paciente>{
+
+public class Paciente<E>  implements Comparable<E>{
 	String nombre;
 	String enfermedad;
-	char prioridad;
-	@Override
-	public int compareTo(Paciente x) {
+	String prioridad;
+	public Paciente(String nombrePaciente, String enfermedad, String prioridad) {
+		super();
+		this.nombre = nombrePaciente;
+		this.enfermedad = enfermedad;
+		this.prioridad = prioridad;
+	}
+
+	public int compareTo(E paciente) {
 		// TODO Auto-generated method stub
-		int resultado=0;
-        if (this.prioridad < x.prioridad) {   resultado = -1;      }
-        else if (this.prioridad > x.prioridad) {    resultado = 1;      }
-        else {   resultado = 0;   }
-        return resultado;
+		return this.prioridad.compareTo(((Paciente) paciente).prioridad);
 	}
 }
+
