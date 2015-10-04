@@ -1,5 +1,22 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos
+ * Hoja de trabajo 8
+ * 
+ * @author Yosemite Meléndez	14413
+ * @author Jonathan Aguirre		14349	
+ * 
+ */
+
 import java.util.*;
-	import java.util.Vector;
+import java.util.Vector;
+
+
+/**
+ * 
+ *
+ * @param <E>
+ */
 public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> {
 
 		protected Vector<E> data;
@@ -7,6 +24,9 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 			data = new Vector<E>();
 		 }
 		
+		/**
+		 * @param v
+		 */
 		public VectorHeap2(Vector<E> v){
 			int i;
 			data = new Vector<E>(v.size());
@@ -14,15 +34,30 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 				add(v.get(i));
 			}
 		}
+		/**
+		 * @param i
+		 * @return
+		 */
 		protected static int parent(int i){
 			return (i-1)/2;
 		}
+		/**
+		 * @param i
+		 * @return
+		 */
 		protected static int left(int i){
 			return (2*i+1);
 		}
+		/**
+		 * @param i
+		 * @return
+		 */
 		protected static int right(int i){
 			return (i+1)*2;
 		}
+		/**
+		 * @param leaf
+		 */
 		protected void percolateUp(int leaf)
 		{
 			int parent = parent(leaf);
@@ -35,6 +70,9 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 			}
 			data.set(leaf,value);
 		}
+		/**
+		 * @param root
+		 */
 		protected void pushDownRoot(int root)
 		{
 			int heapSize = data.size();
@@ -62,6 +100,7 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 				}
 			}
 		}
+		
 		public void add(E value)
 
 		{
