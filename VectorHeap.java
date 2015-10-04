@@ -4,9 +4,7 @@
  * Hoja de trabajo 8
  * 
  * @author Yosemite Meléndez	14413
-=======
  * @author Yosemite MelÃ©ndez	14413
->>>>>>> origin/master
  * @author Jonathan Aguirre		14349	
  * 
  */
