@@ -3,11 +3,7 @@
  * Algoritmos y Estructuras de Datos
  * Hoja de trabajo 8
  * 
-<<<<<<< HEAD
- * @author Yosemite Meléndez	14413
-=======
  * @author Yosemite MelÃ©ndez	14413
->>>>>>> origin/master
  * @author Jonathan Aguirre		14349	
  * 
  */
@@ -18,11 +14,7 @@ import java.util.Vector;
 
 /**
  * 
-<<<<<<< HEAD
- *
-=======
  * Segundo Vector Heap que implementa del la interfase PriorityQueue
->>>>>>> origin/master
  * @param <E>
  */
 public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> {
@@ -33,11 +25,7 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 		 }
 		
 		/**
-<<<<<<< HEAD
-		 * @param v
-=======
 		 * @param v  Segundo Constructor de la clase 
->>>>>>> origin/master
 		 */
 		public VectorHeap2(Vector<E> v){
 			int i;
@@ -48,44 +36,28 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 		}
 		/**
 		 * @param i
-<<<<<<< HEAD
-		 * @return
-=======
 		 * @return obtenida del libro de texto
->>>>>>> origin/master
 		 */
 		protected static int parent(int i){
 			return (i-1)/2;
 		}
 		/**
 		 * @param i
-<<<<<<< HEAD
-		 * @return
-=======
 		 * @return obtenida del libro de texto
->>>>>>> origin/master
 		 */
 		protected static int left(int i){
 			return (2*i+1);
 		}
 		/**
 		 * @param i
-<<<<<<< HEAD
-		 * @return
-=======
 		 * @return obtenida del libro de texto
->>>>>>> origin/master
 		 */
 		protected static int right(int i){
 			return (i+1)*2;
 		}
 		/**
 		 * @param leaf
-<<<<<<< HEAD
-		 */
-=======
 		 */ obtenida del libro de texto
->>>>>>> origin/master
 		protected void percolateUp(int leaf)
 		{
 			int parent = parent(leaf);
@@ -100,11 +72,7 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 		}
 		/**
 		 * @param root
-<<<<<<< HEAD
-		 */
-=======
 		 */ obtenida del libro de texto
->>>>>>> origin/master
 		protected void pushDownRoot(int root)
 		{
 			int heapSize = data.size();
