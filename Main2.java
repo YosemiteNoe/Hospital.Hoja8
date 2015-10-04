@@ -14,7 +14,7 @@ import java.util.Vector;
 
 /**
  * 
- *
+ * Main para el segundo progrma que utiliza la implementación de la Priority
  */
 public class Main2 {
 	
@@ -42,6 +42,10 @@ public class Main2 {
 					e.printStackTrace();
 				}
 		    }
+/**
+ * 
+ * Main para el segundo programa que llama a la lectura del programa e imprime el resultado
+ */
 		public static void main(String[] args) throws IOException {
 			// TODO Auto-generated method stub
 			leer("pacientes.txt"); // lectura del archivo pacientes
