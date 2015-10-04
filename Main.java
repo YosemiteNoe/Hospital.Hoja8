@@ -1,7 +1,28 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos
+ * Hoja de trabajo 8
+ * 
+ * @author Yosemite Meléndez	14413
+ * @author Jonathan Aguirre		14349	
+ * 
+ */
+
 import java.io.*;
 import java.util.Vector;
+
+
+/**
+ * Esta es la clase main y se encarga de ejecutar el programa
+ *
+ */
 public class Main {
 static int contador = 0; 
+
+
+/**
+ * 
+ */
 static Vector<Paciente> v = new Vector<Paciente>();
 	  public static void leer(String archivo) throws FileNotFoundException, IOException {
 	        String cadena; 
@@ -23,6 +44,8 @@ static Vector<Paciente> v = new Vector<Paciente>();
 				e.printStackTrace();
 			}
 	    }
+	  
+
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		leer("pacientes.txt"); // lectura del archivo pacientes
