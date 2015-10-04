@@ -14,7 +14,7 @@ import java.util.Vector;
 
 /**
  * 
- *
+ * Segundo Vector Heap que implementa del la interfase PriorityQueue
  * @param <E>
  */
 public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> {
@@ -25,7 +25,7 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 		 }
 		
 		/**
-		 * @param v
+		 * @param v  Segundo Constructor de la clase 
 		 */
 		public VectorHeap2(Vector<E> v){
 			int i;
@@ -36,28 +36,28 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 		}
 		/**
 		 * @param i
-		 * @return
+		 * @return obtenida del libro de texto
 		 */
 		protected static int parent(int i){
 			return (i-1)/2;
 		}
 		/**
 		 * @param i
-		 * @return
+		 * @return obtenida del libro de texto
 		 */
 		protected static int left(int i){
 			return (2*i+1);
 		}
 		/**
 		 * @param i
-		 * @return
+		 * @return obtenida del libro de texto
 		 */
 		protected static int right(int i){
 			return (i+1)*2;
 		}
 		/**
 		 * @param leaf
-		 */
+		 */ obtenida del libro de texto
 		protected void percolateUp(int leaf)
 		{
 			int parent = parent(leaf);
@@ -72,7 +72,7 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 		}
 		/**
 		 * @param root
-		 */
+		 */ obtenida del libro de texto
 		protected void pushDownRoot(int root)
 		{
 			int heapSize = data.size();
