@@ -22,6 +22,7 @@ static int contador = 0;
 
 /**
  * 
+ *Se utiliza un Vector de tipo Paciente, que posee los atributos de nombre, enfermedad y Prioridad
  */
 static Vector<Paciente> v = new Vector<Paciente>();
 	  public static void leer(String archivo) throws FileNotFoundException, IOException {
@@ -46,6 +47,10 @@ static Vector<Paciente> v = new Vector<Paciente>();
 	    }
 	  
 
+/**
+ * 
+ * este metodo llama a la lectura del archivo e imprime el resultado ordenado según su prioridad
+ */
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		leer("pacientes.txt"); // lectura del archivo pacientes
@@ -59,3 +64,4 @@ static Vector<Paciente> v = new Vector<Paciente>();
 		
 	}
 }
+
