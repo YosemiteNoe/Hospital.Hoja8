@@ -56,8 +56,9 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 			return (i+1)*2;
 		}
 		/**
+		 * obtenida del libro de texto
 		 * @param leaf
-		 */ obtenida del libro de texto
+		 */ 
 		protected void percolateUp(int leaf)
 		{
 			int parent = parent(leaf);
@@ -71,8 +72,9 @@ public class VectorHeap2 <E extends Comparable<E>>  implements PriorityQueue<E> 
 			data.set(leaf,value);
 		}
 		/**
+		 * obtenida del libro de texto
 		 * @param root
-		 */ obtenida del libro de texto
+		 */ 
 		protected void pushDownRoot(int root)
 		{
 			int heapSize = data.size();
