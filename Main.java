@@ -3,7 +3,11 @@
  * Algoritmos y Estructuras de Datos
  * Hoja de trabajo 8
  * 
+<<<<<<< HEAD
  * @author Yosemite Mel�ndez	14413
+=======
+ * @author Yosemite Meléndez	14413
+>>>>>>> origin/master
  * @author Jonathan Aguirre		14349	
  * 
  */
@@ -22,6 +26,10 @@ static int contador = 0;
 
 /**
  * 
+<<<<<<< HEAD
+=======
+ *Se utiliza un Vector de tipo Paciente, que posee los atributos de nombre, enfermedad y Prioridad
+>>>>>>> origin/master
  */
 static Vector<Paciente> v = new Vector<Paciente>();
 	  public static void leer(String archivo) throws FileNotFoundException, IOException {
@@ -46,6 +54,13 @@ static Vector<Paciente> v = new Vector<Paciente>();
 	    }
 	  
 
+<<<<<<< HEAD
+=======
+/**
+ * 
+ * este metodo llama a la lectura del archivo e imprime el resultado ordenado según su prioridad
+ */
+>>>>>>> origin/master
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		leer("pacientes.txt"); // lectura del archivo pacientes
@@ -59,3 +74,4 @@ static Vector<Paciente> v = new Vector<Paciente>();
 		
 	}
 }
+

@@ -3,7 +3,11 @@
  * Algoritmos y Estructuras de Datos
  * Hoja de trabajo 8
  * 
+<<<<<<< HEAD
  * @author Yosemite Mel�ndez	14413
+=======
+ * @author Yosemite Meléndez	14413
+>>>>>>> origin/master
  * @author Jonathan Aguirre		14349	
  * 
  */
@@ -14,7 +18,11 @@ import java.util.Vector;
 
 /**
  * 
+<<<<<<< HEAD
  *
+=======
+ * Main para el segundo progrma que utiliza la implementación de la Priority
+>>>>>>> origin/master
  */
 public class Main2 {
 	
@@ -42,6 +50,10 @@ public class Main2 {
 					e.printStackTrace();
 				}
 		    }
+/**
+ * 
+ * Main para el segundo programa que llama a la lectura del programa e imprime el resultado
+ */
 		public static void main(String[] args) throws IOException {
 			// TODO Auto-generated method stub
 			leer("pacientes.txt"); // lectura del archivo pacientes
